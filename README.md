@@ -75,3 +75,5 @@ suggestions on our forum.
 User Guide: http://docs.aws.amazon.com/codestar/latest/userguide/welcome.html
 
 Forum: https://forums.aws.amazon.com/forum.jspa?forumID=248
+
+Copyright © Amazon Web Services 2017
