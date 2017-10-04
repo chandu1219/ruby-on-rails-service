@@ -76,4 +76,6 @@ User Guide: http://docs.aws.amazon.com/codestar/latest/userguide/welcome.html
 
 Forum: https://forums.aws.amazon.com/forum.jspa?forumID=248
 
+Release blog: https://aws.amazon.com/blogs/aws/new-aws-codestar/
+
 Copyright © Amazon Web Services 2017
