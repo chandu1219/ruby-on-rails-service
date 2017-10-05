@@ -78,4 +78,9 @@ Forum: https://forums.aws.amazon.com/forum.jspa?forumID=248
 
 Release blog: https://aws.amazon.com/blogs/aws/new-aws-codestar/
 
+CodeBuild 
+---------
+
+AWS CodeBuild now allows you to build GitHub pull requests, making it easier to collaborate across your team while editing and building your application code with CodeBuild.  
+
 Copyright © Amazon Web Services 2017
