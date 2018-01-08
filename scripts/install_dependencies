@@ -1,17 +1,13 @@
 #!/bin/bash
 cd /home/ec2-user/ruby-on-rails
 # Install prerequisites
-yum install -y gcc openssl-devel libyaml-devel libffi-devel readline-devel zlib-devel gdbm-devel ncurses-devel ruby-devel gcc-c++ jq git
 
-# Import key
-curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
-
-# Install RVM
-curl -sSL https://get.rvm.io | bash -s stable --ruby
-source /etc/profile.d/rvm.sh
+sudo yum install -y curl gpg gcc gcc-c++ make
+sudo gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | sudo bash -s stable
+sudo usermod -a -G rvm `whoami`
 rvm requirements
 rvm install 2.3.0
-
 gem install rails
 bundle install
 bundle exec passenger start -p 80 -a 0.0.0.0 -d
