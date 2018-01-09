@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ec2-user/ruby-on-rails
+cd /home/ubuntu/ruby-on-rails
 sudo apt-get install software-properties-common
 sudo apt-add-repository -y ppa:rael-gc/rvm
 sudo apt-get update
