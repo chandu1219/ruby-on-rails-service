@@ -1,10 +1,10 @@
 #!/bin/bash
 cd /home/ec2-user/ruby-on-rails
-# Install prerequisites
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-\curl -sSL https://get.rvm.io | bash
-rvm requirements
-rvm install 2.3.0
+sudo apt-get install software-properties-common
+sudo apt-add-repository -y ppa:rael-gc/rvm
+sudo apt-get update
+sudo apt-get install rvm
+rvm install ruby
 gem install rails
 bundle install
 bundle exec passenger start -p 80 -a 0.0.0.0 -d
