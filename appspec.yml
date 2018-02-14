@@ -3,40 +3,40 @@ os: linux
 files:
   - source: /config.ru
     destination: /home/ubuntu/ruby-on-rails
-    overwrite: purge
+    overwrite: true
   - source: /Gemfile
     destination: /home/ubuntu/ruby-on-rails
-    overwrite: purge
+    overwrite: true
   - source: /Gemfile.lock
     destination: /home/ubuntu/ruby-on-rails
-    overwrite: purge
+    overwrite: true
   - source: /Rakefile
     destination: /home/ubuntu/ruby-on-rails
-    overwrite: purge
+    overwrite: true
   - source: /README.md
     destination: /home/ubuntu/ruby-on-rails
-    overwrite: purge
+    overwrite: true
   - source: /app/
     destination: /home/ubuntu/ruby-on-rails/app
-    overwrite: purge
+    overwrite: true
   - source: /config/
     destination: /home/ubuntu/ruby-on-rails/config
-    overwrite: purge
+    overwrite: true
   - source: /db/
     destination: /home/ubuntu/ruby-on-rails/db
-    overwrite: purge
+    overwrite: true
   - source: /log/
     destination: /home/ubuntu/ruby-on-rails/log
-    overwrite: purge
+    overwrite: true
   - source: /vendor/
     destination: /home/ubuntu/ruby-on-rails/vendor
-    overwrite: purge
+    overwrite: true
   - source: /public/
     destination: /home/ubuntu/ruby-on-rails/public
-    overwrite: purge
+    overwrite: true
   - source: /test/
     destination: /home/ubuntu/ruby-on-rails/test
-    overwrite: purge
+    overwrite: true
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies
