@@ -38,6 +38,10 @@ files:
     destination: /home/ubuntu/ruby-on-rails/test
     overwrite: purge
 hooks:
+  BeforeInstall:
+    - location: scripts/remove_files
+       timeout: 1800
+       runas: root
   AfterInstall:
     - location: scripts/install_dependencies
       timeout: 1800
