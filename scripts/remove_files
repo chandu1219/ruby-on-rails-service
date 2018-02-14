@@ -1,3 +1,2 @@
 #!/bin/bash
-cd /home/ubuntu
-rm -rf ruby-on-rails
+rm -rf /home/ubuntu/ruby-on-rails/*
