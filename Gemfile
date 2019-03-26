@@ -50,6 +50,8 @@ group :development do
   gem 'capistrano-sidekiq', github: "alif-wal/capistrano-sidekiq"
   gem 'capistrano-bundler'
   gem 'capistrano-passenger'
+  gem "capistrano-rails", "~> 1.4", require: false
+  gem 'capistrano-rvm'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
