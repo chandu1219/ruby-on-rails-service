@@ -31,6 +31,16 @@ set :deploy_to, "set :deploy_to, "/home/ubuntu/#{fetch(:application)}""
 set :passenger_restart_options, -> { "#{deploy_to} --ignore-app-not-running --rolling-restart" }
 set :passenger_roles, :web
 
+namespace :deploy do
+
+  after :restart, :clear_cache do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
+      # Here we can do anything such as:
+      # within release_path do
+      #   execute :rake, 'cache:clear'
+      # end
+    end
+  end
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }
 

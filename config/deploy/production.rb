@@ -9,14 +9,14 @@ set :branch, 'master'
 # server "db.example.com", user: "deploy", roles: %w{db}
 
 
-task :generate_and_host_documentation do
-  on roles(:web) do
-    execute :gem, :install
-    execute :server
-  end
-end
-
-after "deploy:published", "generate_and_host_documentation"
+# task :generate_and_host_documentation do
+#   on roles(:web) do
+#     execute :gem, :install
+#     execute :server
+#   end
+# end
+#
+# after "deploy:published", "generate_and_host_documentation"
 
 # role-based syntax
 # ==================
